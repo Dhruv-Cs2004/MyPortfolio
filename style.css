@@ -1,4 +1,4 @@
-/* General Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -17,8 +17,6 @@ body {
   padding: 0;
 }
 
-/* Navigation */
-/* NAVBAR STYLING */
 header {
   background-color: #222;
   padding: 0.8rem 1rem;
@@ -59,7 +57,7 @@ header {
   color: #00bcd4;
 }
 
-/* Hamburger menu for small screens */
+
 .menu-icon {
   display: none;
   font-size: 2rem;
@@ -71,7 +69,7 @@ header {
   display: none;
 }
 
-/* Responsive Navbar (Side Slide) */
+
 @media (max-width: 768px) {
   .nav-links {
     position: fixed;
@@ -95,14 +93,14 @@ header {
   }
 }
 
-/* Main Content Layout */
+
 main {
   max-width: 1000px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
 
-/* Intro Section */
+
 .intro {
   text-align: center;
 }
@@ -179,10 +177,7 @@ main {
 
 
 
-/* Projects Page */
-/* ==============================
-   Project Section
-============================== */
+
 
 .projects {
   padding: 2rem;
@@ -263,7 +258,7 @@ main {
 }
 
 
-/* Contact Page */
+
 .contact-form form {
   background-color: #fff;
   padding: 2rem;
@@ -327,7 +322,7 @@ main {
 }
 
 
-/* Footer */
+
 footer {
   text-align: center;
   background-color: #222;
@@ -336,7 +331,7 @@ footer {
   margin-top: 3rem;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
