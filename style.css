@@ -347,3 +347,26 @@ footer {
     width: 90%;
   }
 }
+
+
+.close-icon {
+  display: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  z-index: 1100;
+}
+
+@media (max-width: 768px) {
+  #menu-toggle:checked ~ .close-icon {
+    display: block;
+  }
+
+  #menu-toggle:checked ~ .menu-icon {
+    display: none;
+  }
+}
+
