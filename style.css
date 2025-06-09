@@ -18,26 +18,81 @@ body {
 }
 
 /* Navigation */
+/* NAVBAR STYLING */
 header {
   background-color: #222;
-  padding: 1rem 0;
+  padding: 0.8rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-nav ul {
+.navbar {
   display: flex;
-  justify-content: center;
-  gap: 2rem;
-  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
 }
 
-nav a {
+.logo a {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
-nav a:hover {
+.nav-links a:hover {
   color: #00bcd4;
+}
+
+/* Hamburger menu for small screens */
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+/* Responsive Navbar (Side Slide) */
+@media (max-width: 768px) {
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    height: 100%;
+    width: 200px;
+    background-color: #222;
+    flex-direction: column;
+    padding-top: 5rem;
+    gap: 1.5rem;
+    transition: right 0.3s ease;
+  }
+
+  #menu-toggle:checked ~ .nav-links {
+    right: 0;
+  }
+
+  .menu-icon {
+    display: block;
+  }
 }
 
 /* Main Content Layout */
